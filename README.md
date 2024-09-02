@@ -4,12 +4,47 @@ SELECTとINSERTを大量発生させるケース
 
 - ```1本のクエリが遅い```
 
-
 ## N + 1問題発生原因
-***ループ処理の中で大量のSQLが発生(SELECT)***。
+***ループ処理の中でループを書いて大量のSQLが発生(SELECT)***。
+ex)
+ループの中で別のテーブルを呼ぶ
+```rb
+Shop.all.each do |shop|
+  puts shop.name
+    # お寿司屋
+    # コンビニ
+    # 居酒屋
+
+# SELECT ...
+# SELECT ...
+
+  Shop.foods.each do |shop|
+    puts foods.name
+      # お刺身
+      # ハイボール
+      # タバコ
+      # ジャンプ
+      # 大トロ
+      # サーモン
+  end
+end
+```
 
 ## N +1問題解決策
+- ```Eager Load```
+***今回はこっちを採用***。1本釣りではなく、1本は2本でSELECTを収める
+```rb
+Shop.includes(:menu).all.each do |shop|
+```
 
+- ```JOIN```
+SQLのJoinを使って1本釣り
+```rb
+Shop.join(:menu).all.each do |shop|
+```
+- 補足
+```Eager Load(先にSELECT)```と```Lazy Load(遅延SELECT)```
+Eager Loadがいい。
 
 ## その他DBのパフォーマンス低下原因(調査中)
 ### 1. ```大量データの読み込み```
