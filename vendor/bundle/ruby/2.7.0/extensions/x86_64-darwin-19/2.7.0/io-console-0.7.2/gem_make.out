@@ -1,0 +1,26 @@
+current directory: /Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/io-console-0.7.2/ext/io/console
+/Users/hashimotonoriaki/.rbenv/versions/2.7.1/bin/ruby -I /Users/hashimotonoriaki/.rbenv/versions/2.7.1/lib/ruby/site_ruby/2.7.0 -r ./siteconf20240903-14040-5ezdk6.rb extconf.rb
+checking for rb_io_path()... no
+checking for rb_io_descriptor()... no
+checking for rb_io_get_write_io()... yes
+checking for rb_io_closed_p()... no
+checking for rb_io_open_descriptor()... no
+checking for termios.h... yes
+checking for cfmakeraw() in termios.h... yes
+checking for sys/ioctl.h... yes
+checking for HAVE_RUBY_FIBER_SCHEDULER_H... no
+checking for rb_scheduler_timeout()... no
+creating Makefile
+
+current directory: /Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/io-console-0.7.2/ext/io/console
+make "DESTDIR=" clean
+
+current directory: /Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/io-console-0.7.2/ext/io/console
+make "DESTDIR="
+compiling console.c
+linking shared-object io/console.bundle
+ld: warning: -multiply_defined is obsolete
+
+current directory: /Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/io-console-0.7.2/ext/io/console
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 console.bundle ./.gem.20240903-14040-1ilqrj2/io

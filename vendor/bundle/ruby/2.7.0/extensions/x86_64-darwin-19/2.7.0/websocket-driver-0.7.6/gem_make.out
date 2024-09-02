@@ -1,0 +1,16 @@
+current directory: /Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+/Users/hashimotonoriaki/.rbenv/versions/2.7.1/bin/ruby -I /Users/hashimotonoriaki/.rbenv/versions/2.7.1/lib/ruby/site_ruby/2.7.0 -r ./siteconf20240903-14040-1xp1j5j.rb extconf.rb
+creating Makefile
+
+current directory: /Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+ld: warning: -multiply_defined is obsolete
+
+current directory: /Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20240903-14040-1igilpf

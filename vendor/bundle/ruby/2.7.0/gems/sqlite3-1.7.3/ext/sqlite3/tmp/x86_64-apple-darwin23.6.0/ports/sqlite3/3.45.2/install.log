@@ -1,0 +1,15 @@
+ /usr/local/bin/gmkdir -p '/Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.3/ports/x86_64-apple-darwin23.6.0/sqlite3/3.45.2/lib'
+ /bin/sh ./libtool   --mode=install /usr/local/bin/ginstall -c   libsqlite3.la '/Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.3/ports/x86_64-apple-darwin23.6.0/sqlite3/3.45.2/lib'
+libtool: install: /usr/local/bin/ginstall -c .libs/libsqlite3.lai /Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.3/ports/x86_64-apple-darwin23.6.0/sqlite3/3.45.2/lib/libsqlite3.la
+libtool: install: /usr/local/bin/ginstall -c .libs/libsqlite3.a /Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.3/ports/x86_64-apple-darwin23.6.0/sqlite3/3.45.2/lib/libsqlite3.a
+libtool: install: chmod 644 /Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.3/ports/x86_64-apple-darwin23.6.0/sqlite3/3.45.2/lib/libsqlite3.a
+libtool: install: ranlib /Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.3/ports/x86_64-apple-darwin23.6.0/sqlite3/3.45.2/lib/libsqlite3.a
+ /usr/local/bin/gmkdir -p '/Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.3/ports/x86_64-apple-darwin23.6.0/sqlite3/3.45.2/bin'
+  /bin/sh ./libtool   --mode=install /usr/local/bin/ginstall -c sqlite3 '/Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.3/ports/x86_64-apple-darwin23.6.0/sqlite3/3.45.2/bin'
+libtool: install: /usr/local/bin/ginstall -c sqlite3 /Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.3/ports/x86_64-apple-darwin23.6.0/sqlite3/3.45.2/bin/sqlite3
+ /usr/local/bin/gmkdir -p '/Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.3/ports/x86_64-apple-darwin23.6.0/sqlite3/3.45.2/include'
+ /usr/local/bin/ginstall -c -m 644 sqlite3.h sqlite3ext.h '/Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.3/ports/x86_64-apple-darwin23.6.0/sqlite3/3.45.2/include'
+ /usr/local/bin/gmkdir -p '/Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.3/ports/x86_64-apple-darwin23.6.0/sqlite3/3.45.2/share/man/man1'
+ /usr/local/bin/ginstall -c -m 644 sqlite3.1 '/Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.3/ports/x86_64-apple-darwin23.6.0/sqlite3/3.45.2/share/man/man1'
+ /usr/local/bin/gmkdir -p '/Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.3/ports/x86_64-apple-darwin23.6.0/sqlite3/3.45.2/lib/pkgconfig'
+ /usr/local/bin/ginstall -c -m 644 sqlite3.pc '/Users/hashimotonoriaki/git/rails_tuning/db_tuning_demo/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.3/ports/x86_64-apple-darwin23.6.0/sqlite3/3.45.2/lib/pkgconfig'

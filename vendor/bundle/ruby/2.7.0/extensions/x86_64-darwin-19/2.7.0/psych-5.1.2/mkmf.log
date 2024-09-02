@@ -1,0 +1,97 @@
+"pkg-config --exists yaml-0.1"
+| pkg-config --libs yaml-0.1
+=> "-L/usr/local/Cellar/libyaml/0.2.5/lib -lyaml\n"
+"clang -o conftest -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include/ruby-2.7.0/x86_64-darwin19 -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include/ruby-2.7.0/ruby/backward -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include/ruby-2.7.0 -I. -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/hashimotonoriaki/.rbenv/versions/2.7.1/lib -L. -L/Users/hashimotonoriaki/.rbenv/versions/2.7.1/lib  -fstack-protector-strong -L/usr/local/lib     -lruby.2.7   "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+"clang -o conftest -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include/ruby-2.7.0/x86_64-darwin19 -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include/ruby-2.7.0/ruby/backward -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include/ruby-2.7.0 -I. -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/hashimotonoriaki/.rbenv/versions/2.7.1/lib -L. -L/Users/hashimotonoriaki/.rbenv/versions/2.7.1/lib  -fstack-protector-strong -L/usr/local/lib     -lruby.2.7 -L/usr/local/Cellar/libyaml/0.2.5/lib -lyaml  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+| pkg-config --cflags-only-I yaml-0.1
+=> "-I/usr/local/Cellar/libyaml/0.2.5/include\n"
+| pkg-config --cflags-only-other yaml-0.1
+=> "\n"
+| pkg-config --libs-only-l yaml-0.1
+=> "-lyaml\n"
+package configuration for yaml-0.1
+incflags: -I/usr/local/Cellar/libyaml/0.2.5/include
+cflags: 
+ldflags: -L/usr/local/Cellar/libyaml/0.2.5/lib
+libs: -lyaml
+
+find_header: checking for yaml.h... -------------------- yes
+
+"clang -E -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include/ruby-2.7.0/x86_64-darwin19 -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include/ruby-2.7.0/ruby/backward -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include/ruby-2.7.0 -I. -I/usr/local/Cellar/libyaml/0.2.5/include -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -fno-common -pipe   conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <yaml.h>
+/* end */
+
+--------------------
+
+find_library: checking for yaml_get_version() in -lyaml... -------------------- yes
+
+"clang -o conftest -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include/ruby-2.7.0/x86_64-darwin19 -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include/ruby-2.7.0/ruby/backward -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include/ruby-2.7.0 -I. -I/usr/local/Cellar/libyaml/0.2.5/include -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -fno-common -pipe  conftest.c  -L. -L/Users/hashimotonoriaki/.rbenv/versions/2.7.1/lib -L. -L/Users/hashimotonoriaki/.rbenv/versions/2.7.1/lib  -fstack-protector-strong -L/usr/local/lib -L/usr/local/Cellar/libyaml/0.2.5/lib     -lyaml -lruby.2.7 -lyaml  -lyaml  "
+conftest.c:14:57: error: use of undeclared identifier 'yaml_get_version'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))yaml_get_version; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))yaml_get_version; return !p; }
+/* end */
+
+"clang -o conftest -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include/ruby-2.7.0/x86_64-darwin19 -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include/ruby-2.7.0/ruby/backward -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include/ruby-2.7.0 -I. -I/usr/local/Cellar/libyaml/0.2.5/include -I/Users/hashimotonoriaki/.rbenv/versions/2.7.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -fno-common -pipe  conftest.c  -L. -L/Users/hashimotonoriaki/.rbenv/versions/2.7.1/lib -L. -L/Users/hashimotonoriaki/.rbenv/versions/2.7.1/lib  -fstack-protector-strong -L/usr/local/lib -L/usr/local/Cellar/libyaml/0.2.5/lib     -lyaml -lruby.2.7 -lyaml  -lyaml  "
+ld: warning: ignoring duplicate libraries: '-lyaml'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void yaml_get_version();
+15: int t(void) { yaml_get_version(); return 0; }
+/* end */
+
+--------------------
+
